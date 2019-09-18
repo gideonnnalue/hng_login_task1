@@ -1,1 +1,30 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box; }
 
+body {
+  font-family:Poppins;
+  line-height: 2.5rem; } 
+
+a {
+  color:blue;
+  text-decoration:none; }
+
+.container {
+  max-width: 1440px;
+  overflow:auto;
+  background:#fff; }
+
+img {
+   width:70%; 
+   display:block;
+   margin: 6rem auto; }
+
+.card {
+  display:grid;
+  grid-template-columns: 1.1fr 0.9fr; 
+  background:#fbfeff;
+  height: 100vh; }
+
+#login_form { background: #fff; }
