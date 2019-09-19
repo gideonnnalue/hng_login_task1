@@ -1,30 +1,72 @@
 * {
-  margin:0;
-  padding:0;
-  box-sizing:border-box; }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  font-family:'Poppins', sans-serif;
-  line-height: 2.5rem; } 
+  font-family: "Poppins", sans-serif;
+  line-height: 2.5rem;
+}
 
 a {
-  color:blue;
-  text-decoration:none; }
+  color: blue;
+  text-decoration: none;
+}
 
 .container {
   max-width: 1440px;
-  overflow:auto;
-  background:#fff; }
+  overflow: auto;
+  background: #fff;
+}
 
 img {
-   width:70%; 
-   display:block;
-   margin: 6rem auto; }
+  width: 70%;
+  display: block;
+  margin: 6rem auto;
+}
 
 .card {
-  display:grid;
-  grid-template-columns: 1.1fr 0.9fr; 
-  background:#fbfeff;
-  height: 100vh; }
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  background: #fbfeff;
+  height: 100vh;
+}
 
-#login_form { background: #fff; }
+#login_form {
+  background: #fff;
+}
+
+.main_title {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.main_span {
+  color: #0056ec;
+  border: 3px solid #0056ec;
+  padding: 0.5rem;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.main_span .red_text {
+  color: #eb5757;
+}
+
+.main_span .orange_text {
+  color: #f2994a;
+}
+
+.main_span .skyBlue_text {
+  color: #56ccf2;
+}
+
+.main_span .purple_text {
+  color: #bb6bd9;
+}
+
+.main_span .green_text {
+  color: #27ae60;
+}
