@@ -5,7 +5,10 @@
 
 body {
   font-family:'Poppins', sans-serif;
-  line-height: 2.5rem; } 
+  line-height: 2.5rem; 
+  background-image: url(sign_in.svg)
+  
+}
 
 a {
   color:blue;
@@ -17,14 +20,65 @@ a {
   background:#fff; }
 
 img {
-   width:70%; 
+   width:70%;
    display:block;
    margin: 6rem auto; }
 
 .card {
   display:grid;
-  grid-template-columns: 1.1fr 0.9fr; 
+  grid-template-columns: 1.1fr 0.9fr;
   background:#fbfeff;
   height: 100vh; }
 
-#login_form { background: #fff; }
+#login_form { background: #fff;
+  margin-top: 200px;
+  margin-left: 30px;
+}
+
+h4 {
+  color: #cccccc;
+
+  }
+
+#welcomeText{
+  margin-bottom: 1px;
+}
+
+#email {
+  background-color: #e6e6e6;
+  height: 30px;
+  width: 250px;
+  border-radius: 25px;
+  color: white;
+  margin-top: 12px;
+  font-size: 0.7em;
+  padding-left: 10px;
+}
+
+#password {
+  background-color: #e6e6e6;
+  height: 30px;
+  width: 250px;
+  border-radius: 25px;
+  margin-top: 12px;
+  color: white;
+  font-size: 0.7em;
+  padding-left: 10px;
+}
+
+#submit {
+  background-color: #0000ff;
+  height: 30px;
+  width: 250px;
+  border-radius: 25px;
+  margin-top: 12px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+#forgotpassword {
+  margin-left:65px ;
+  text-decoration: none;
+  color:  #a6a6a6;
+}
