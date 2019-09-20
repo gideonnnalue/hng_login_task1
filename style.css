@@ -5,9 +5,9 @@
 }
 
 body {
-  font-family:'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 2.5rem;
-  background-image: url(sign_in.svg)
+  background-image: url(sign_in.svg);
 }
 
 a {
@@ -16,30 +16,36 @@ a {
 }
 
 .container {
-  max-width: 1440px;
+  width: 100%;
   overflow: auto;
   background: #fff;
 }
 
 img {
-   width:65%;
-   display:block;
-   margin: 10rem auto;
+  width: 65%;
+  display: block;
+  margin: 10rem auto;
 }
 
 .image_description {
-  position:relative;
-  background:#fbfeff;
+  position: relative;
+  background: #fbfeff;
 }
 
 .card {
-  display:grid;
+  display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   height: 100vh;
 }
 
 #login_form {
-  margin: 12.5rem auto;
+  margin: 12.5rem 5rem;
+}
+
+.label_text {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #011b33;
 }
 
 h4 {
@@ -48,7 +54,8 @@ h4 {
 
 #welcomeText {
   margin-bottom: 1px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 input:focus {
@@ -56,47 +63,53 @@ input:focus {
 }
 
 input {
-  border:none;
+  border: none;
 }
 
-#email, 
+#name,
+#email,
 #password,
 #sign_in_btn {
-  height:2.5rem;
-  width:16.85rem;
-  border-radius:25px;
-  margin-top:0.75rem;
-  color:#fff;
+  border-radius: 100px;
+  margin-top: 0.75rem;
+  color: #000;
 }
 
+#name,
 #email,
 #password {
-  background-color: #e6e6e6;
-  font-size: 0.7rem;
-  padding-left: 10px;
+  background-color: #f4f6f8;
+  padding: 18px 20px;
+  width: 80%;
 }
 
 #sign_in_btn {
+  display: block;
   background-color: #0000ff;
-  padding: 0.63rem 0;
+  padding: 18px 0;
+  width: 80%;
+  color: #fff;
 }
-
 
 #sign_in_btn:hover {
   background-color: #3c3cf0;
   color: #fff;
 }
 
+.forgot_password_block {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
 #forgotpassword {
-  margin-left:3.5rem;
   text-decoration: none;
-  color:  #a6a6a6;
-  width: 70%;
+  color: #a6a6a6;
   display: block;
 }
 
 .main_title {
-  position: absolute; 
+  position: absolute;
   top: 1rem;
   left: 1rem;
 }
@@ -129,13 +142,56 @@ input {
   color: #27ae60;
 }
 
-span.info{
-  color:red;
+@media only screen and (max-width: 68.75em) {
+  #name,
+  #email,
+  #password {
+    width: 100%;
+  }
+
+  #sign_in_btn {
+    width: 100%;
+  }
+
+  .forgot_password_block {
+    width: 100%;
+  }
 }
 
-ul.errors{
-  color:red;
-  margin-left:1em;
-  line-height:1.25rem;
+@media only screen and (max-width: 56.25em) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
+@media only screen and (max-width: 56.25em) {
+  #login_form {
+    margin: 12.5rem 2rem;
+  }
+
+  img {
+    width: 90%;
+    display: block;
+    margin: 15rem auto;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .card {
+    grid-template-columns: 0fr 1fr;
+  }
+
+  #login_form {
+    margin: 12.5rem 5rem;
+  }
+
+  .image_description {
+    position: unset;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  #login_form {
+    margin: 12.5rem 2rem;
+  }
+}
