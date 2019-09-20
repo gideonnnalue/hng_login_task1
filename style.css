@@ -96,6 +96,10 @@ input {
   color: #fff;
 }
 
+.error {
+  color: red;
+}
+
 .forgot_password_block {
   display: flex;
   justify-content: center;
@@ -106,6 +110,12 @@ input {
   text-decoration: none;
   color: #a6a6a6;
   display: block;
+  transition: all 0.3s;
+}
+
+#forgotpassword:hover {
+  text-decoration: underline;
+  color: #0000ff;
 }
 
 .main_title {
