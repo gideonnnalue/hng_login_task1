@@ -28,6 +28,7 @@ img {
 }
 
 .image_description {
+  position:relative;
   background:#fbfeff;
 }
 
