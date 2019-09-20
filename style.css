@@ -129,3 +129,13 @@ input {
   color: #27ae60;
 }
 
+span.info{
+  color:red;
+}
+
+ul.errors{
+  color:red;
+  margin-left:1em;
+  line-height:1.25rem;
+}
+
