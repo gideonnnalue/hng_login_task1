@@ -43,6 +43,7 @@ img {
 }
 
 
+
 h4 {
   color: #cccccc;
 }
@@ -74,8 +75,13 @@ h4 {
 }
 
 
-#sign_in_btn {
+#sign_in_btn:hover {
   background-color: #0000ff;
+  color: white;
+}
+
+#sign_in_btn {
+  background-color: white;
   height: 30px;
   width: 250px;
   border-radius: 25px;
