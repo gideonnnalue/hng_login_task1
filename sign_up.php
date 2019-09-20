@@ -1,3 +1,28 @@
+<?php
+
+require("functions.php");
+
+$errors = "";
+if (isset($_POST['sign_in_btn'])) {
+  $email = $_POST['email_address'];
+  $password = $_POST['password'];
+  $name = $_POST['full_name'];
+
+  $errors = validateCredentialsSignUp($email, $password, $name);
+
+  if (strcmp($errors, "<ul class='errors'></ul>") == 0) {
+    $connected = add_user("database", $email, $password, $name);
+    if (strcmp($connected, "succes") == 0) {
+      header("location:sign_in.php");
+    } else if (strcmp($connected, "username_exists") == 0) {
+      $errors = "<span class='info'>Email already exists in our database.</span><br/>";
+    }
+     else{
+      $errors = "<span class='info'>Error registering your informations.</span><br/>";
+    }
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,14 +59,15 @@
       <div id="login_form">
         <h1 class="label_text">Sign up</h1>
         <p>Already a member? <a href="sign_in.php">Sign in</a></p>
-        <form action="#" class="form">
+        <div class="error"><?php echo $errors; ?></div>
+        <form action="" class="form" method="POST">
           <input id="name" type="text" class="form_control" name="full_name" placeholder="Full name">
           <br>
           <input id="email" type="email" class="form_control" name="email_address" placeholder="Email address">
           <br>
           <input id="password" type="password" class="form_control" name="password" placeholder="Password">
           <br>
-          <input id="sign_in_btn" type="submit" class="btn_submit" value="SIGN UP">
+          <input id="sign_in_btn" name="sign_in_btn" type="submit" class="btn_submit" value="SIGN UP">
           
         </form>
       </div>
