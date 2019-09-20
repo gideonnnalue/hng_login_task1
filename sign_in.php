@@ -93,8 +93,9 @@ if (isset($_POST['sign_in_btn'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:400,500,600,700&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" type="image/png" href="fav.png"/>
   <link rel="stylesheet" href="./style.css" type="text/css" />
-  <title>Login Page</title>
+  <title>Login | TEAM CODEIT</title>
 </head>
 
 <body>
@@ -119,9 +120,9 @@ if (isset($_POST['sign_in_btn'])) {
       </div>
       <div id="login_form">
         <h4 id="welcomeText">Welcome back</h4>
-        <h1>Sign in</h1>
+        <h1 class="label_text">Sign in</h1>
         <p>New user? <a href="sign_up.php">Create an account</a></p>
-        <?php echo $errors; ?>
+        <div class="error"><?php echo $errors; ?></div>
         <form action="" class="form" method="POST">
           <input id="email" type="email" class="form_control" name="email_address" placeholder="Email address">
           <br>
