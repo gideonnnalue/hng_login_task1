@@ -43,6 +43,9 @@ img {
 }
 
 
+input {
+  outline: none;
+}
 
 h4 {
   color: #cccccc;
