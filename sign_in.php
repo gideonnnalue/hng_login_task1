@@ -57,7 +57,7 @@
       }
     }
     function validateCredentials($email, $password){
-      $validation = "";
+      $validation = "<ul class='errors'>";
       if (!isValidEmail($email)){
         $validation .= "<li>Invalid email</li>";
       }
@@ -65,18 +65,19 @@
       if (!isValidPassword($password)){
         $validation .= "<li>Invalid password</li>";
       }
+      $validation .= "</ul>";
 
       return $validation;
     }
     $errors = validateCredentials($email, $password);
 
-    if (empty($errors)){
+    if (strcmp($errors, "<ul class='errors'></ul>") == 0){
       $connected = check_credentials("database", $email, $password);
       if (strcmp($connected, "user_authentificated") == 0){
         header("location:connected.php");
       }
       else{
-        $errors = "<li>Your login or password doens't match.</li>";
+        $errors = "<span class='info'>Your login or password don't match.</span><br/>";
       }
     }
   }
@@ -118,7 +119,7 @@
                <h4 id="welcomeText">Welcome back</h4>
                <h1>Sign in</h1>
                <p>New user? <a href="#">Create an account</a></p>
-               <ul><?php echo $errors; ?></ul>
+               <?php echo $errors; ?>
                <form action="" class="form" method="POST">
                   <input id="email" type="email" class="form_control" name="email_address" placeholder="Email address">
                   <br>
