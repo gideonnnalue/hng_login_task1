@@ -47,53 +47,44 @@ h4 {
 
 #welcomeText {
   margin-bottom: 1px;
+  font-size: 1.3rem;
 }
 
 input:focus {
   outline: none;
 }
 
-#email {
+
+#email, 
+#password,
+#sign_in_btn {
+  height:2.5rem;
+  width:16.85rem;
+  border-radius:25px;
+  margin-top:0.75rem;
+  color:#fff;
+}
+
+#email,
+#password {
   background-color: #e6e6e6;
-  height: 30px;
-  width: 250px;
-  border-radius: 25px;
-  color: white;
-  margin-top: 12px;
-  font-size: 0.7em;
+  font-size: 0.7rem;
   padding-left: 10px;
 }
 
-#password {
-  background-color: #e6e6e6;
-  height: 30px;
-  width: 250px;
-  border-radius: 25px;
-  margin-top: 12px;
-  color: white;
-  font-size: 0.7em;
-  padding-left: 10px;
+#sign_in_btn {
+  background-color: #0000ff;
+  padding: 0.63rem 0;
 }
 
 
 #sign_in_btn:hover {
   background-color: #3c3cf0;
-  color: white;
-}
-
-#sign_in_btn {
-  background-color: #0000ff;
-  height: 30px;
-  width: 250px;
-  border-radius: 25px;
-  margin-top: 12px;
   color: #fff;
-  padding-top: 10px;
-  padding-bottom: 20px;
 }
 
 #forgotpassword {
-  margin-left:56px ;
+  margin-left:3.5rem;
   text-decoration: none;
   color:  #a6a6a6;
   width: 70%;
