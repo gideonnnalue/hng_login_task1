@@ -1,5 +1,5 @@
 # hng_login_task1
-A login web page
+A Sign Up/Login web page with some basic authentication :fire:s
 # credentials which works
 Email : virginie@gmail.com
 Password : password
