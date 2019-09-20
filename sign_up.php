@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:400,500,600,700&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" type="image/png" href="fav.png"/>
   <link rel="stylesheet" href="./style.css" type="text/css" />
-  <title>Login Page</title>
+  <title>Signup | TEAM CODEIT</title>
 </head>
 
 <body>
@@ -40,10 +41,8 @@
           <br>
           <input id="password" type="password" class="form_control" name="password" placeholder="Password">
           <br>
-          <input id="sign_in_btn" type="submit" class="btn_submit" value="SIGN IN">
-          <p class="bottom_text">
-            <div class="forgot_password_block"><a href="#" id="forgotpassword">Forgot Password?</a></div>
-          </p>
+          <input id="sign_in_btn" type="submit" class="btn_submit" value="SIGN UP">
+          
         </form>
       </div>
     </section>
